@@ -15,7 +15,7 @@ static const char col_orange[]      = "#ffae19";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
-	[SchemeSel]  = { col_gray4, col_gray2, col_orange  },
+	[SchemeSel]  = { col_gray4, col_gray2, col_orange },
 };
 
 /* tagging */
@@ -54,8 +54,8 @@ static const Layout layouts[] = {
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
-static const char *browsercmd[] = { "surf", "google.com" }
+static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_orange, "-sf", col_gray4, NULL };
+static const char *browsercmd[] = { "surf", "google.com" };
 static const char *termcmd[]  = { "st", NULL };
 
 static Key keys[] = {
